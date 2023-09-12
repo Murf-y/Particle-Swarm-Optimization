@@ -29,7 +29,7 @@ class Particle:
 
     def evaluate(self):
         x, y,  = self.position
-        fitness = (x - 2) ** 2 + (y - 2) ** 2
+        fitness = x * math.exp(-(x ** 2) - (y ** 2))
         return fitness
 
 
